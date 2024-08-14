@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "survivalist",
+	"version": "${version}",
+	"name": "Survivalist",
+	"description": "This mod is based in a 'Minecrafty way' real's world human survival by nerfing the Player and adding challenges to the progression.",
+	"authors": [
+		"andrewyernau"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/andrewyernau/SurvivalistMod"
+	},
+	"license": "MIT",
+	"icon": "assets/survivalist/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.andrewyernau.survivalist.Survivalist"
+		],
+		"fabric-datagen": [
+			"net.andrewyernau.survivalist.SurvivalistDataGenerator"
+		],
+		"client": [
+			"net.andrewyernau.survivalist.SurvivalistClient"
+		]
+	},
+	"mixins": [
+		"survivalist.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
