@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,resin_drop=false": {
+      "model": "survivalist:block/cut_mangrove_log",
+      "y": 90
+    },
+    "facing=east,resin_drop=true": {
+      "model": "survivalist:block/cut_mangrove_log_resin_drop",
+      "y": 90
+    },
+    "facing=north,resin_drop=false": {
+      "model": "survivalist:block/cut_mangrove_log"
+    },
+    "facing=north,resin_drop=true": {
+      "model": "survivalist:block/cut_mangrove_log_resin_drop"
+    },
+    "facing=south,resin_drop=false": {
+      "model": "survivalist:block/cut_mangrove_log",
+      "y": 180
+    },
+    "facing=south,resin_drop=true": {
+      "model": "survivalist:block/cut_mangrove_log_resin_drop",
+      "y": 180
+    },
+    "facing=west,resin_drop=false": {
+      "model": "survivalist:block/cut_mangrove_log",
+      "y": 270
+    },
+    "facing=west,resin_drop=true": {
+      "model": "survivalist:block/cut_mangrove_log_resin_drop",
+      "y": 270
+    }
+  }
+}

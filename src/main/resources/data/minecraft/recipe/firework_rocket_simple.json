@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "survivalist:sulfur"
+    },
+    {
+      "item": "survivalist:potassium_nitrate"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:firework_rocket"
+  }
+}

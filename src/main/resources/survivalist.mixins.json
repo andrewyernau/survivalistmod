@@ -3,7 +3,9 @@
 	"package": "net.andrewyernau.survivalist.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"FireworkStackSizeMixin",
+		"BoneMealItemMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

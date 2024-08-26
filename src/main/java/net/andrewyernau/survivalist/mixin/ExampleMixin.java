@@ -1,5 +1,7 @@
 package net.andrewyernau.survivalist.mixin;
 
+import com.jcraft.jorbis.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

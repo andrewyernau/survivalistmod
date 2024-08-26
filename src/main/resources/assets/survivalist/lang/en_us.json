@@ -1,0 +1,34 @@
+{
+  "item.survivalist.stone_pebble": "Stone Pebble",
+  "item.survivalist.quartz_pebble": "Quartz Pebble",
+  "item.survivalist.obsidian_pebble": "Obsidian Pebble",
+  "item.survivalist.stone_chopper": "Stone Chopper",
+  "item.survivalist.quartz_chopper": "Quartz Chopper",
+  "item.survivalist.obsidian_chopper": "Obsidian Chopper",
+  "item.survivalist.ash": "Ash",
+  "item.survivalist.manure": "Manure",
+  "item.survivalist.sulfur": "Sulfur",
+  "item.survivalist.potassium_nitrate": "Potassium Nitrate",
+  "item.survivalist.sac": "Sac",
+  "item.survivalist.stone_knife": "Stone Knife",
+  "item.survivalist.resin": "Resin",
+
+  "block.survivalist.sulfur_block": "Sulfur Block",
+  "block.survivalist.sulfur_ore": "Sulfur Ore",
+  "block.survivalist.deepslate_sulfur_ore": "Deepslate Sulfur Ore",
+  "block.survivalist.manure_in_sac": "Manure in Sac",
+  "block.survivalist.cut_oak_log":"Cut Oak Log",
+  "block.survivalist.cut_acacia_log":"Cut Acacia Log",
+  "block.survivalist.cut_spruce_log":"Cut Spruce Log",
+  "block.survivalist.cut_birch_log":"Cut Birch Log",
+  "block.survivalist.cut_jungle_log":"Cut Jungle Log",
+  "block.survivalist.cut_cherry_log":"Cut Cherry Log",
+  "block.survivalist.cut_dark_oak_log":"Cut Dark Oak Log",
+  "block.survivalist.cut_mangrove_log":"Cut Mangrove Log",
+
+  "itemgroup.survivalist.survivalist_items": "Survivalist Items",
+  "itemgroup.survivalist.survivalist_blocks": "Survivalist Blocks",
+  "itemgroup.survivalist.survivalist_tools": "Survivalist Tools",
+
+  "sounds.survivalist.wood_saw": "Saw log block"
+}

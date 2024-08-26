@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "survivalist:block/manure_in_sac_bottom",
+    "up": "survivalist:block/manure_in_sac_top",
+    "north": "survivalist:block/manure_in_sac_side_odd",
+    "south": "survivalist:block/manure_in_sac_side_odd",
+    "west": "survivalist:block/manure_in_sac_side_even",
+    "east": "survivalist:block/manure_in_sac_side_even",
+    "particle": "survivalist:block/manure_in_sac_bottom"
+  }
+}

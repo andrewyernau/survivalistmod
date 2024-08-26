@@ -1,0 +1,8 @@
+{
+  "wood_saw": {
+    "subtitle": "sounds.survivalist.wood_saw",
+    "sounds": [
+      "survivalist:wood_saw"
+    ]
+  }
+}
