@@ -14,8 +14,8 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
 
     public static final ItemGroup SURVIVALIST_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(Survivalist.MOD_ID,"survivalist_items"),
-            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.SAC))
+            Identifier.of(Survivalist.MOD_ID, "survivalist_items"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.SAC))
                     .displayName(Text.translatable("itemgroup.survivalist.survivalist_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.ASH);
@@ -32,8 +32,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SULFUR);
                     }).build());
     public static final ItemGroup SURVIVALIST_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(Survivalist.MOD_ID,"survivalist_block_items"),
-            FabricItemGroup.builder().icon(()-> new ItemStack(ModBlocks.MANURE_IN_SAC))
+            Identifier.of(Survivalist.MOD_ID, "survivalist_block_items"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.MANURE_IN_SAC))
                     .displayName(Text.translatable("itemgroup.survivalist.survivalist_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.CUT_ACACIA_LOG);
@@ -51,14 +51,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SULFUR_ORE);
                     }).build());
     public static final ItemGroup SURVIVALIST_TOOLS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(Survivalist.MOD_ID,"survivalist_tools"),
-            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.ASH))
+            Identifier.of(Survivalist.MOD_ID, "survivalist_tools"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.STONE_KNIFE))
                     .displayName(Text.translatable("itemgroup.survivalist.survivalist_tools"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.STONE_KNIFE);
                     }).build());
 
-    public static void registerItemGroups(){
-        Survivalist.LOGGER.info("Registering Item Groups for "+Survivalist.MOD_ID);
+    public static void registerItemGroups() {
+        Survivalist.LOGGER.info("Registering Item Groups for " + Survivalist.MOD_ID);
     }
 }

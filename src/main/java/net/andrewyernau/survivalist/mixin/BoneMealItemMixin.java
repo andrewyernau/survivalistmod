@@ -19,18 +19,17 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 
-
 @Mixin(BoneMealItem.class)
 public class BoneMealItemMixin {
-    @Inject(method = "useOnFertilizable",at = @At("HEAD"),cancellable = true)
-    private static void useOnFertilizable0(ItemStack stack, World world, BlockPos pos,  CallbackInfoReturnable<Boolean> cir){
+    @Inject(method = "useOnFertilizable", at = @At("HEAD"), cancellable = true)
+    private static void useOnFertilizable0(ItemStack stack, World world, BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
         BlockState blockState = world.getBlockState(pos);
 
         //for bonemeal
         if (stack.getItem() == Items.BONE_MEAL && blockState.getBlock() instanceof GrassBlock && blockState.getBlock() instanceof Fertilizable fertilizable && fertilizable.isFertilizable(world, pos, blockState)) {
             if (world instanceof ServerWorld) {
                 if (fertilizable.canGrow(world, world.random, pos, blockState)) {
-                    fertilizable.grow((ServerWorld)world, world.random, pos, blockState);
+                    fertilizable.grow((ServerWorld) world, world.random, pos, blockState);
                 }
 
                 stack.decrement(1);

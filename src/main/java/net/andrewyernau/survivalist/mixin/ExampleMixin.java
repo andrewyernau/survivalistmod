@@ -12,8 +12,8 @@ import javax.security.auth.callback.Callback;
 
 @Mixin(MinecraftServer.class)
 public class ExampleMixin {
-    @Inject(at =@At("HEAD"),method = "loadWorld")
-    private void init(CallbackInfo info){
+    @Inject(at = @At("HEAD"), method = "loadWorld")
+    private void init(CallbackInfo info) {
 
     }
 }

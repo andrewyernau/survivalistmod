@@ -17,7 +17,7 @@ public class ModItems {
     public static final Item QUARTZ_CHOPPER = registerItem("quartz_chopper", new Item(new Item.Settings()));
     public static final Item OBSIDIAN_CHOPPER = registerItem("obsidian_chopper", new Item(new Item.Settings()));
     public static final Item RESIN = registerItem("resin", new Item(new Item.Settings()));
-    public static final Item STONE_KNIFE = registerItem("stone_knife",new StoneKnifeItem(ToolMaterials.STONE,
+    public static final Item STONE_KNIFE = registerItem("stone_knife", new StoneKnifeItem(ToolMaterials.STONE,
             new Item.Settings().maxDamage(32).attributeModifiers(StoneKnifeItem.createAttributeModifiers(ToolMaterials.STONE, 3, -2.4F))));
     //GAME MECHANICS
     public static final Item MANURE = registerItem("manure", new BoneMealItem(new Item.Settings()));
@@ -27,10 +27,14 @@ public class ModItems {
     public static final Item SAC = registerItem("sac", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(Survivalist.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, Survivalist.id(name), item);
     }
 
     public static void registerModItems() {
         Survivalist.LOGGER.info("Registering Mod Items for " + Survivalist.MOD_ID);
+    }
+
+    public static <T extends Item> T registerModItems(String name, T item) {
+        return Registry.register(Registries.ITEM, Survivalist.id(name), item);
     }
 }

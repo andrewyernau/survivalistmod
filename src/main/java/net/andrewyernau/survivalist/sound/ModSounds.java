@@ -11,7 +11,7 @@ public class ModSounds {
     public static final SoundEvent WOOD_SAW = registerSoundEvent("wood_saw");
 
     private static SoundEvent registerSoundEvent(String name) {
-        Identifier id = Identifier.of(Survivalist.MOD_ID,name);
+        Identifier id = Identifier.of(Survivalist.MOD_ID, name);
 
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
     }

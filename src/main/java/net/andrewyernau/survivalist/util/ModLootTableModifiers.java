@@ -13,7 +13,7 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 
 public class ModLootTableModifiers {
-    public static void modifyLootTables(){
+    public static void modifyLootTables() {
 //        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
 //            if(Blocks.STONE.getLootTableKey() == key){
 //                LootPool.Builder poolBuilder = LootPool.builder()
