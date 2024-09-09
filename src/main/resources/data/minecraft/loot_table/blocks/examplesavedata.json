@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:copy_components",
+              "include": [
+                "toolbelt:number",
+                "minecraft:container"
+              ],
+              "source": "block_entity"
+            }
+          ],
+          "name": "toolbelt:toolbelt"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}
